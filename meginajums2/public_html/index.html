@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>te darbojas virsraksts</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            function krasot (){
+                var kr=document.getElementById("krasa").value;
+                document.getElementById("fons").style="background-color:"+kr;
+            }
+        </script>
+    </head>
+    <body>
+        <h3> Virsraksts </h3>
+        <div>kontents</div>
+        <p> šis ir tikai mēģinājums. <br>
+            šis pat nav vandālisms. <br>
+            ļoti skaisti varētu izskatīties glāžšķūņu rūķīši. <br>
+            \sis ir tikai meginajums, sim nevajag izskatities diez ko salasami\</p>
+        <ul> 
+            <li> ja nu izdodas </li>
+            <li> izveidot sarakstu </li>
+            <li> ar bumbinam gala </li>
+        </ul>
+        
+        <form>
+            <div> viena briva vieta ar lauku
+                <input type="text" name="vieta1">
+            </div>
+            <div> otra  briva vieta ar lauku &nbsp; <input name="vieta2">
+            </div>
+        </form>
+        <form> 
+            <div id="fons" style="background-color:white"> Izvēlies krāsu! </div> 
+            <input type="color" id="krasa" value="#0f6600" onclick="krasot();">
+        </form>
+    </body>
+</html>
